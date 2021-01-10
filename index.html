@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Coding Website</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    </head>
+    <body>
+        <header>
+            <h1>Raymond Suo Personal Projects</h1>
+            <a class="name" id="link" href="https://github.com/louisgarder" target="_blank">View Github Profile</a>
+        </header>
+        <div class = "projects">
+            <div id = "sorting">
+                <div class = "title" id = "firstTitle">Sorting Algorithms Visualized</div>
+                <div class = "linkImage">
+                    <a href="https://louisgarder.github.io/sorting-algorithms-visualization/" target="_blank">
+                        <img  id = "image" src="sorting_img.png" width="20%"></img> 
+                    </a>
+                </div>
+                <div class = "linkText">
+                    <a href="https://louisgarder.github.io/sorting-algorithms-visualization/" target="_blank">
+                        <p1>Try It Out</p1>
+                    </a>
+                </div>
+                <div class = "row">
+                    <div class = "column" id = "description">
+                        <h1>Purpose and What it Does</h1>
+                        <p>The purpose of this project is to create a visualization tool for the most popular sorting algorithms, including selection 
+                            sort, insertion sort, merge sort, quick sort, heap sort, and shell short. This tool can be used as a learning tool, as an 
+                            educational demonstration, or just for recreational purposes. The program allows for adjustments in the size of the array
+                            to be sorted, the sortedness (how sorted the array initally is) of the array, and the sorting speed. Different values in the array
+                            are represented by rectangular bars with different heights. The program effecitvely visualizes the sorting process through color changes and 
+                            continuous changes in the positions of the rectangular bars. 
+                         </p>
+                    </div>
+                    <div class = "column" id  = "built">
+                        <h1>How I Built It</h1>
+                        <p>The program was built as a webpage using HTML, CSS, and Javascript. To animate the sorting algorithms, the setInterval() method 
+                            was used to repeatedly call a function at specified intervals. Therefore, each sorting algorithm, including merge sort and quick sort, 
+                            had to be written using an iterative implementation. 
+                        </p>
+                    </div>
+                    <div class = "column" id  = "technologies">
+                        <h1>Built With</h1>
+                        <div><span class = "tool">Javascript</span></div>
+                        <div><span class = "tool">HTML</span></div>
+                        <div><span class = "tool">CSS</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "divider"></div>
+            <div id = "school">
+                <div class = "title">Creating Desegregated School Attendance Zones</div>
+                <div class = "linkText">
+                    <a href= "https://github.com/louisgarder/school-atendance-zones" target="_blank">
+                        <p1>View on Github</p1>
+                    </a>
+                </div>
+                <div class = "row">
+                    <div class = "column" id = "description">
+                        <h1>Purpose and What it Does</h1>
+                        <p>School attendance zones are defined as the outlines in a school district where students will attend public schools. 
+                            A major problem with current school attendance zones is that they are often created without consideration of the racial/ethnic demographics in zones; 
+                            This consequently leads to the creation of segregated school attendane zones and segregated classrooms. 
+                            The purpose of this project is to create school attendance zones for a region that have racial/ethnic demographics that beter reflect the demographics of the 
+                            overall region while still mantaining contiguity and compactness.
+                         </p>
+                         <p> By utilizing a novel algorithm that combines US demographic data of census block groups and a similar partitioning method to Vornoi polygons, 
+                            <b>the program succesfully creates school attendance zones that are signifcantly less segregated than the current school zones implemented in 
+                            the targeted regions.</b> Testing on several regions including Maricopa County (Phoenix) and Suffolk County (Boston), the program was able to create
+                            configurations of attendance zones with an <b>average 37% improvement from the current school zones</b> when looking at the percent difference in demographics 
+                            between the overall region and the actual schools. 
+                         </p>
+                    </div>
+                    <div class = "column" id  = "built">
+                        <h1>How I Built It</h1>
+                        <p>To ensure that the school attendance zones are the most racially/ethnically diverse, the zones were centered around census block groups with the highest "diversity scores,"
+                            a score that is calcualted using a novel algoirthm. The remaining block groups are partitioned based on a distance formula. In order to organize the census data, a 'BlockGroup' struct
+                            and 'SchoolAttendanceZone' struct were defined. These data-types also allow for easy future implemention of other races and ethnicities into the algoirthm. To create a visualization
+                            tool for the newly created school attendance zones, the QPainter class was utilized to map out each attendance zone and the block groups contained within. 
+
+                        </p>
+                    </div>
+                    <div class = "column" id  = "technologies">
+                        <h1>Built With</h1>
+                        <div><span class = "tool">C++</span></div>
+                        <div><span class = "tool">QPainter</span></div>
+                        <div><span class = "tool">US Census Data</span></div>
+                        <div><span class = "tool">Excel</span></div>
+                        
+                    </div>
+            </div>
+            <div class = "divider"></div>
+            <div id = "huffman">
+                <div class = "title">Huffman Compression/Decompression Tool</div>
+                <div class = "linkText">
+                    <a href= "https://github.com/louisgarder/school-atendance-zones" target="_blank">
+                        <p1>View on Github</p1>
+                    </a>
+                </div>
+                <div class = "row">
+                    <div class = "column" id = "description">
+                        <h1>Purpose and What it Does</h1>
+                        <p>This program uses the Huffman coding algorithm (https://en.wikipedia.org/wiki/Huffman_coding) for compression and decompression. The purpose of this program is to compress any large text files.
+                             The same program can also be used to decompress the resulting compressed file and faithfully reproduce the original.
+                         </p>
+                    </div>
+                    <div class = "column" id  = "built">
+                        <h1>How I Built It</h1>
+                        <p>The program was built as a webpage using HTML, CSS, and Javascript. To animate the sorting algorithms, the setInterval() method 
+                            was used to repeatedly call a function at specified intervals. Therefore, each sorting algorithm, including merge sort and quick sort, 
+                            had to be written using an iterative implementation. 
+                        </p>
+                    </div>
+                    <div class = "column" id  = "technologies">
+                        <h1>Built With</h1>
+                        <div><span class = "tool">C++</span></div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
